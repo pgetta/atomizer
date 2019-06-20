@@ -232,7 +232,7 @@ def bnglFunction(rule,functionTitle,reactants,compartments=[],parameterDict={},r
                 print('meep')
         return rule
 
-    #rule = changeToBNGL(['pow','root'],rule,powParse)
+    rule = changeToBNGL(['pow','root'],rule,powParse)
     rule = changeToBNGL(['gt','lt','leq','geq','eq'],rule,compParse)
     #rule = changeToBNGL(['and','or'],rule,compParse)
     flag = True
